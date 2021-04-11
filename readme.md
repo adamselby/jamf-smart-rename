@@ -10,7 +10,7 @@ Renames a computer based on asset tag info set in Jamf, using serial number look
 ## Rename Computer Based on Jamf Location Info
 **DEPT-BLDGROOM-POSITION (ABC-BLDG123-01)**
 
-Renames computers based on computer location info set in Jamf, using serial number lookup. Pulls multiple pieces of info from location for each computer record and combines into a computer name. Converts full building names in Jamf's Network Organization settings into standard building abbreviations. These will need to be manually specified once in the script. This could be used for one-to-many deployments such as shared computer labs where workstations are individually numbered. We store this information in the *position* field, since no user is permantently assigned to it. 
+Renames computers based on computer location info set in Jamf, using serial number lookup. Pulls multiple pieces of info from location for each computer record and combines into a computer name. Converts full building names in Jamf's Network Organization settings into standard building abbreviations. These will need to be manually specified once in the script. This could be used for one-to-many deployments such as shared computer labs where workstations are individually numbered. We store this information in the *position* field, since no user is assigned to it, but you could also use an Extension Attribute.  
 
 * * *
 
