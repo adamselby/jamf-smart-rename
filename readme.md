@@ -1,6 +1,6 @@
-# Jamf Information Rename
+# Jamf Smart Rename
 
-Script used for automatic/smart renaming based on information stored in Jamf. Ideally, this is used in combination with Inventory Preload or a similar bulk update solution such as [The MUT](https://github.com/mike-levenick/mut). This could also be used in combination with manual user-input via Self Service, or as part of an onboarding or enrollment process. The advantage to this script is that a computer’s name can be updated by simply updating these fields in Jamf with this script set as a recurring policy, as these fields are writable via Jamf recon and the API. 
+Script used for automatic renaming based on information stored in Jamf. Ideally, this is used in combination with Inventory Preload or a similar bulk update solution such as [The MUT](https://github.com/mike-levenick/mut). This could also be used in combination with manual user-input via Self Service, as part of an onboarding or enrollment process, or via some other form of inventory or extension attribute data population. The advantage to this script is that a computer’s name can be updated by simply updating these fields in Jamf or using the Jamf API, with this script set as a recurring policy. 
 
 A Jamf API user with read access must be specified in variables 5 & 6, with the name format defined in variable 4, as one of the following options: `location`, `asset`, or `network`. If no format is specified, serial number is used instead. 
 
